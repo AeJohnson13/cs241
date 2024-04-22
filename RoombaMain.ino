@@ -3,7 +3,7 @@
 // For CS 241
 //
 // Started: 4/6/2024
-// Updated: 4/15/2024
+// Updated: 4/21/2024
 
 
 // Roomba Serial Comms Manual
@@ -218,7 +218,6 @@ bool spin = 0;
 
 void loop() {
     const uint16_t vel = 150;  
-   // readColumnSum();
     int column = maxColumn();  
 
 
@@ -244,7 +243,7 @@ void loop() {
         while(1);
     }
 
-    delay(200); // delay to slow down how fast the loop runs 
+    delay(200); // delay to slow down how fast the loop runs in in accordance with ag8338 refresh rate
 }
 
 
