@@ -3,7 +3,7 @@
 // For CS 241
 //
 // Started: 4/6/2024
-// Updated: 4/21/2024
+// Updated: 4/22/2024
 
 
 // Roomba Serial Comms Manual
@@ -184,7 +184,9 @@ void roombaOn()
     delay(500);
 }
 
-// 
+// findThresh
+// returns the average temperature across thermal sensor at startup
+// for good performace point away from thermal object at startup 
 int findThresh()
 {
   readColumnSum();
